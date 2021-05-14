@@ -41,7 +41,7 @@ beforeEach(async () => {
 describe('Inbox', () => {
     it('Deploy a contract', () => {
         //console.log(accounts);
-        console.log(inbox);
+        //console.log(inbox);
         // ok checks whether address is set or not
         assert.ok(inbox.options.address);
     });
@@ -51,7 +51,7 @@ describe('Inbox', () => {
         const message = await inbox.methods.message().call();
         assert.equal( message, 'Hello World');
     });
-    
+
 });
 
 /*
